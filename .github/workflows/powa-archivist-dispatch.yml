@@ -73,8 +73,3 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-
-      - name: Image published successfully
-        run: |
-          echo "✓ Image published successfully to GHCR"
-          echo "✓ Tags: ${{ steps.meta.outputs.tags }}"
